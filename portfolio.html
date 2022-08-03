@@ -17,7 +17,7 @@
     <header class="page-header">
       <div class="container header-container">
         <nav class="nav">
-          <a href="./index.html" class="link logo" lang="en"><span class="accent">Web</span>Studio</a>
+          <a href="./index.html" class="link header-logo logo" lang="en"><span class="accent">Web</span>Studio</a>
           <ul class="list nav-list">
             <li class="nav-item">
               <a href="./index.html" class="link nav-link">Студия</a>
@@ -26,16 +26,24 @@
               <a href="./portfolio.html" class="link nav-link current">Портфолио</a>
             </li>
             <li class="nav-item">
-              <a href="" class="link nav-link">Контакты</a>
+              <a href="#" class="link nav-link">Контакты</a>
             </li>
           </ul>
         </nav>
         <ul class="list nav-address">
           <li class="address-item">
-            <a href="mailto:info@devstudio.com" class="link header-contacts">info@devstudio.com</a>
+            <a href="mailto:info@devstudio.com" class="link header-contacts">
+              <svg class="header-icon" width="16" height="12">
+                <use href="./images/sprite.svg#envelope"></use></svg
+              >nfo@devstudio.com</a
+            >
           </li>
           <li class="address-item">
-            <a href="tel:+380961111111" class="link header-contacts">+38 096 111 11 11</a>
+            <a href="tel:+380961111111" class="link header-contacts"
+              ><svg class="header-icon" width="10" height="16">
+                <use href="./images/sprite.svg#smartphone"></use></svg
+              >+38 096 111 11 11</a
+            >
           </li>
         </ul>
       </div>
@@ -50,7 +58,7 @@
           <!-- Кнопки-фильтр портфолио -->
           <ul class="list button-list">
             <li class="button-item">
-              <button type="button" class="button portf-btn">Все</button>
+              <button type="button" class="button portf-btn current-btn">Все</button>
             </li>
             <li class="button-item">
               <button type="button" class="button portf-btn">Веб сайты</button>
@@ -65,9 +73,11 @@
               <button type="button" class="button portf-btn">Маркетинг</button>
             </li>
           </ul>
+
+          <!-- Карточки портфолио -->
           <ul class="list portf-list">
             <li class="portf-item">
-              <a href="" class="link">
+              <a href="" class="link portf-link">
                 <img src="./images/tekhnokr.jpg" alt="Пример веб-сайта" width="370" height="294" />
                 <div class="border">
                   <h2 class="portf-name">Технокряк</h2>
@@ -76,7 +86,7 @@
               </a>
             </li>
             <li class="portf-item">
-              <a href="" class="link"
+              <a href="" class="link portf-link"
                 ><img src="./images/poster.jpg" alt="Пример дизайна" width="370" height="294" />
                 <div class="border">
                   <h2 class="portf-name">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
@@ -154,20 +164,55 @@
 
     <footer class="footer">
       <div class="container footer-container">
-        <a href="./index.html" class="logo footer-logo link" lang="en"> <span class="accent">Web</span>Studio</a>
-        <address class="address">
-          <ul class="list footer-list">
-            <li class="footer-item">
-              <a href="https://www.google.com.ua/maps/place/бул.+Леси+Украинки,+26,+Киев,+02000/@50.4265807,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858?hl=ru" class="footer-address link"> г. Киев, пр-т Леси Украинки, 26 </a>
+        <div>
+          <a href="./index.html" class="logo footer-logo link" lang="en"> <span class="accent">Web</span>Studio</a>
+          <address class="address">
+            <ul class="list footer-list">
+              <li class="footer-item">
+                <a href="https://www.google.com.ua/maps/place/бул.+Леси+Украинки,+26,+Киев,+02000/@50.4265807,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858?hl=ru" class="footer-address link"> г. Киев, пр-т Леси Украинки, 26 </a>
+              </li>
+              <li class="footer-item">
+                <a href="mailto:info@devstudio.com" class="footer-contacts link">info@devstudio.com</a>
+              </li>
+              <li class="footer-item">
+                <a href="tel:+380961111111" class="footer-contacts link">+38 096 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-inner">
+          <p class="footer-slogan">Присоединяйтесь</p>
+          <ul class="social list">
+            <li class="social-item item">
+              <a href="#" class="social-link join-link link" target="_blank" rel="noopener noreferrer nofollow" aria-label="instagram">
+                <svg class="join-icon" width="20" height="20">
+                  <use href="./images/sprite.svg#instagram"></use>
+                </svg>
+              </a>
             </li>
-            <li class="footer-item">
-              <a href="mailto:info@devstudio.com" class="footer-contacts link">info@devstudio.com</a>
+            <li class="social-item item">
+              <a href="#" class="social-link join-link link" target="_blank" rel="noopener noreferrer nofollow" aria-label="instagram">
+                <svg class="join-icon" width="20" height="20">
+                  <use href="./images/sprite.svg#twitter"></use>
+                </svg>
+              </a>
             </li>
-            <li class="footer-item">
-              <a href="tel:+380961111111" class="footer-contacts link">+38 096 111 11 11</a>
+            <li class="social-item item">
+              <a href="#" class="social-link join-link link" target="_blank" rel="noopener noreferrer nofollow" aria-label="instagram">
+                <svg class="join-icon" width="20" height="20">
+                  <use href="./images/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item item">
+              <a href="#" class="social-link join-link link" target="_blank" rel="noopener noreferrer nofollow" aria-label="instagram">
+                <svg class="join-icon" width="20" height="20">
+                  <use href="./images/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </address>
+        </div>
       </div>
     </footer>
   </body>
