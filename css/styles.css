@@ -466,7 +466,6 @@ body {
 
 .footer-inner {
   display: block;
-  text-align: center;
   width: 206px;
 }
 
@@ -551,7 +550,7 @@ body {
   margin-bottom: 4px;
   font-weight: var(--head-weight);
   font-size: var(--subtitle-size);
-  line-height: 1.18;
+  line-height: 2;
   letter-spacing: 0.03em;
 
   color: var(--title-color);
@@ -559,7 +558,7 @@ body {
 
 .portf-descr {
   font-size: var(--note-size);
-  line-height: 1.18;
+  line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--text-color);
 }
